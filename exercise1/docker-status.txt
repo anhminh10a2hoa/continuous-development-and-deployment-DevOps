@@ -1,0 +1,8 @@
+CONTAINER ID   IMAGE                COMMAND                CREATED          STATUS          PORTS                    NAMES
+b4f5fce3fe5d   exercise1-service1   "python service1.py"   18 minutes ago   Up 18 minutes   0.0.0.0:8199->8199/tcp   exercise1-service1-1
+306618b534c3   exercise1-service2   "./service2"           18 minutes ago   Up 18 minutes   5000/tcp                 exercise1-service2-1
+NETWORK ID     NAME                DRIVER    SCOPE
+3a6c37674f11   bridge              bridge    local
+6083f49473a3   exercise1_default   bridge    local
+8050b9c19348   host                host      local
+dc0af470ad02   none                null      local

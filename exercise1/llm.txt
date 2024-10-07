@@ -1,0 +1,14 @@
+LLM Tool Used: ChatGPT
+
+Motivation for Use:
+I used ChatGPT to assist in debugging an issue with the Dockerfile for Service 1. Specifically, there was a bug related to the missing ps command, which is essential for collecting process information within the container. I also used ChatGPT to guide the setup and ensure that the overall Docker configuration met the exercise requirements.
+
+How the LLM Helped:
+ChatGPT helped identify that the error occurred because the ps command was missing from the container's environment. It suggested installing the procps package in the Dockerfile to make the ps command available. By following this recommendation, the error was resolved, and the system worked as expected.
+
+Mistakes by the LLM:
+There were no major mistakes in this case, but initially, the LLM did not mention that the slim version of the Python image does not include the ps command, which led to the initial issue. After clarification, it provided the correct solution.
+
+Limitations of the LLM:
+The LLM could not directly test the solution, so manual testing and Docker rebuilds were necessary to ensure that the fix worked. It also lacked the ability to detect runtime issues until code execution revealed them.
+

@@ -1,0 +1,13 @@
+Docker containers share certain resources with the host while maintaining isolation.
+
+Kernel: Containers use the host’s kernel, allowing system-level operations without the overhead of a full virtual machine.
+
+File System: By default, containers have isolated file systems, but volumes and bind mounts allow file sharing with the host for data persistence.
+
+Networking: Containers can access the host’s network through port forwarding (bridge mode). In host mode, containers share the host’s network stack.
+
+Process Management: While container processes run in isolated namespaces, they are visible from the host’s process list, allowing monitoring.
+
+Resource Limits: Containers share the host’s CPU, memory, and I/O, but Docker allows resource limits via control groups (cgroups) to prevent resource overuse.
+
+In summary, containers share the host's kernel, network, and resources, but remain isolated in terms of file systems and processes for security.
